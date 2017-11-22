@@ -10,6 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var expressionLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBAction func onResetResult(_ sender: UIButton) {
+    }
+    
+    @IBAction func onGerResult(_ sender: UIButton) {
+    }
+    
+    @IBAction func onEditResult(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
