@@ -13,13 +13,66 @@ class ViewController: UIViewController {
     @IBOutlet weak var expressionLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     
-    @IBAction func onResetResult(_ sender: UIButton) {
+    
+    func lastCharIsOperator(str : String) -> Bool {
+        let arifOperators: [Character] = ["/", "*", "+", "-"]
+        let lastChar = str.last //expressionLabel.text?.last
+        /*if lastChar == nil {
+            return false
+        }*/
+        return arifOperators.contains( lastChar! )
     }
     
-    @IBAction func onGerResult(_ sender: UIButton) {
+    @IBAction func onResetResult(_ sender: UIButton) {
+        if expressionLabel.text?.count ?? 0 > 1 {
+            
+        }
+    }
+    
+    @IBAction func onDelSymbol(_ sender: UIButton) {
+        if expressionLabel.text == "0" || expressionLabel.text == nil {
+            return
+        }
+        
+        if expressionLabel.text?.count ?? 0 == 1 {
+            expressionLabel.text = "0"
+            return
+        }
+        expressionLabel.text?.removeLast()
+    }
+    
+    @IBAction func onNewSymbolAction(_ sender: UIButton) {
+        if lastCharIsOperator(str: expressionLabel.text!) {
+            expressionLabel.text = String(expressionLabel.text!.dropLast(2))   + " " + sender.currentTitle!
+        }
+        else{
+            expressionLabel.text = expressionLabel.text! + " " + sender.currentTitle!
+        }
+    }
+    
+    
+    @IBAction func onGetResult(_ sender: UIButton) {
     }
     
     @IBAction func onEditResult(_ sender: UIButton) {
+        
+        let lastSubstring = expressionLabel.text?.split(separator: " ").last
+        
+        switch sender.currentTitle! {
+        case ",":
+            if !(lastSubstring?.contains(",") ?? true) {
+                expressionLabel.text!.append(",")
+            }
+            else {
+                expressionLabel.text?.append("0,")
+            }
+        default:
+            if lastSubstring == "0" {
+                expressionLabel.text = String(expressionLabel.text!.dropLast(1)) + sender.currentTitle!
+                break
+            }
+            expressionLabel.text?.append(sender.currentTitle!)
+        }
     }
     
     

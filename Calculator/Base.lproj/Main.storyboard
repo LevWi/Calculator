@@ -145,28 +145,28 @@
                                 <rect key="frame" x="119" y="152.5" width="63" height="63"/>
                                 <state key="normal" title="/"/>
                                 <connections>
-                                    <action selector="onEditResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="2NA-pF-qkJ"/>
+                                    <action selector="onNewSymbolAction:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="Cwn-fZ-vo9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDz-FX-PeE">
                                 <rect key="frame" x="215" y="152.5" width="63" height="63"/>
                                 <state key="normal" title="*"/>
                                 <connections>
-                                    <action selector="onEditResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="ZDq-Ue-Zqa"/>
+                                    <action selector="onNewSymbolAction:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="iPz-vq-sDn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-7v-Tg1">
                                 <rect key="frame" x="296" y="152.5" width="63" height="63"/>
                                 <state key="normal" title="del"/>
                                 <connections>
-                                    <action selector="onEditResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="KRC-ip-sel"/>
+                                    <action selector="onDelSymbol:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="XtN-lq-srj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wO-DX-9Ui">
                                 <rect key="frame" x="296" y="233.5" width="63" height="63"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="onEditResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="2NO-qZ-RMh"/>
+                                    <action selector="onNewSymbolAction:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="KKn-V4-QTW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsl-Pr-z2M">
@@ -174,7 +174,7 @@
                                 <color key="backgroundColor" red="0.65326422964389086" green="0.81082543501265381" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="="/>
                                 <connections>
-                                    <action selector="onGerResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="guP-aP-1c3"/>
+                                    <action selector="onGetResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="jmO-81-RVR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-7r-FAW">
@@ -184,7 +184,7 @@
                                 </constraints>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="onEditResult:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="zNN-sn-FmN"/>
+                                    <action selector="onNewSymbolAction:" destination="BPj-Eh-Ffe" eventType="touchUpInside" id="2zg-j3-0ty"/>
                                 </connections>
                             </button>
                         </subviews>
